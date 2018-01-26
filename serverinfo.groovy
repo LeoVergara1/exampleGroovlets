@@ -6,6 +6,7 @@ if (!session) {
 
 if (!session.groovlet) {
   session.groovlet = 'Groovlets rock!'
+  session.object = [name:"Brandon"]
 }
 
 html.html {
@@ -19,6 +20,7 @@ html.html {
       li "RequestURI: ${request.requestURI}"
       li "session.groovlet: ${session.groovlet}"
       li "application.version: ${context.version}"
+      li "${session.object}"
     }
 
     h1 'Headers'

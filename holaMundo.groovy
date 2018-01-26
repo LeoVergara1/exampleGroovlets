@@ -7,6 +7,7 @@ if (!session) {
 
 if (!session.groovlet) {
   session.groovlet = 'Groovlets rock!'
+  session.object = [name:"Brandon"]
 }
 
 html.html {
@@ -17,6 +18,7 @@ html.html {
     h1 'Saludo'
     ul {
       li "Luis Wey"
+      li "${session.object} this my object or map"
     }
 
     h1 'Headers'
